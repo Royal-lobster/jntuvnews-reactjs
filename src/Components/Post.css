@@ -67,9 +67,7 @@
   object-fit: contain;
   display: block;
   margin: 0 auto;
-}
-.post__content img a {
-  background-color: rgb(255, 0, 0);
+  background: url("../Assets/imageNotLoading.png");
 }
 
 @media only screen and (min-width: 0px) and (max-width: 450px) {
