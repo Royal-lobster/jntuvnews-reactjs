@@ -1,0 +1,56 @@
+.header {
+  background: url(../Assets/HeaderBg.png);
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px;
+}
+
+.header__hero {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.header__heroText__disclamer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+}
+.header__heroText__clgName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 670px) {
+  .header__top img {
+    width: 200px;
+  }
+
+  .header__heroText__disclamer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+  }
+  .header__heroText__clgName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 480px) {
+  .header__top img {
+    width: 200px;
+  }
+  .header__hero__h1 {
+    line-height: 0.7;
+  }
+  .header__heroText__disclamer {
+    font-size: 30px;
+  }
+  .header__heroText__clgName {
+    font-size: 12px;
+  }
+}
