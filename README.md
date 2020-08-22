@@ -1,69 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# JNTUV NEWS made With React js
 
-## Available Scripts
+live website: https://jntuk-ucev-news.web.app/
 
-In the project directory, you can run:
+This tiny project is done because its a bit confusing to get the latest news form official website, because the Wordpress theme they use is a bit confusing. Hence i made this webpage which directly pulls the rss feed from the official website and display it in cleaner way with React.
 
-### `npm start`
+I used Axios module, rss2json api, and cors anywhere to fetch the xml rss feed form the official website of jntukucev.ac.in which uses wordpress.
+* this is done by calling get request by axios inside a useEffect by combined url of rss feed converted to json from external api (https://api.rss2json.com/v1/api.json?rss_url=http://jntukucev.ac.in/feed/) and cors-proxy(https://cors-anywhere.herokuapp.com/). this all process is done in PostsSection.js file.
+* this data is later neatly represented through "Post" component and these "Post" components is maped inside PostsSection with inputing the required props inside          the PostsSection.js file 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# jntuvnews-reactjs
+**NOTE:**
+The images cannot be rendered if this website is hosted with https protocol since the official website (www.jntukucev.ac.in) doesnot have a valid SSL Certifiate at this moment. Hence i made images to links in the live website. (https://jntukucev.netlify.app/ - this is the live demo of the website with out styling of images)
