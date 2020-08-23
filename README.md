@@ -2,7 +2,7 @@
 
 live website: https://jntuk-ucev-news.web.app/
 
-<img src="./screenshot.png"/>
+<img src="./screenshots.png"/>
 
 This tiny project is done because its a bit confusing to get the latest news form official website, because the Wordpress theme they use is a bit confusing. Hence i made this webpage which directly pulls the rss feed from the official website and display it in cleaner way with React.
 
