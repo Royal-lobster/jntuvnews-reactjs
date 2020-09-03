@@ -63,11 +63,9 @@
 
 .post__content img {
   width: 100%;
-  max-width: 600px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
-  background: url("../Assets/imageNotLoading.png");
   background-position: center;
 }
 
