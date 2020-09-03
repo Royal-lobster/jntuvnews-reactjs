@@ -62,11 +62,9 @@
 }
 
 .post__content img {
-  width: 100%;
   object-fit: contain;
   display: block;
   margin: 0 auto;
-  background-position: center;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 450px) {
