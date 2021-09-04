@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Skeleton from 'react-loading-skeleton';
 import Axios from "axios";
 import Post from "./Post";
 import "./PostSection.css";
@@ -19,6 +20,7 @@ function PostsSection() {
 
   return (
     <div className="postsSection">
+      {posts.length == 0 && <Skeleton count={5}/>}
       {posts.map((post) => (
         <Post data={post} key={post.title} />
       ))}
