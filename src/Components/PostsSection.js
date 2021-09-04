@@ -5,7 +5,7 @@ import "./PostSection.css";
 
 function PostsSection() {
   const [posts, setPosts] = useState([]);
-  const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+  const CORS_PROXY = "https://corsyproxyfoxy.herokuapp.com/";
   const URL =
     "https://api.rss2json.com/v1/api.json?rss_url=http://jntukucev.ac.in/feed/";
 
