@@ -1,6 +1,6 @@
 # JNTUV NEWS made With React js
 
-live website: https://jntuk-ucev-news.web.app/
+live website: https://jntuvnews.vercel.app
 
 <img src="./screenshots.png"/>
 
